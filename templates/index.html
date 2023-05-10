@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>側弯症かな？と思ったら</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>
+        <a class="header-logo" href="#">側弯症のおそれ診断</a>
+    </header>
+
+    <div class="main">    
+        <h2>AIがアップロードされた画像から <br> 側弯症のおそれがあるか判別します</h2>
+        <h3>※医療診断ではありません</h3>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="アップロード" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+    </div>
+
+    <footer>
+        <small>&copy; 2023 S.D </small>   
+    </footer>
+</body>
+</html>
